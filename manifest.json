@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "青骄第二课堂考试自动填写",
+    "version": "1.0.0",
+    "description": "适用于青骄第二课堂的自动考试谷歌浏览器插件",
+    "content_scripts": [
+        {
+			"matches": ["http://m.2-class.com/exams/*", "https://m.2-class.com/exams/*"],
+			"js": ["js/jquery-3.5.1.js", "js/main.js"],
+			"run_at": "document_end"
+		}
+    ],
+    "homepage_url": "https://www.github.com",
+    "permissions":
+	[
+		"webRequest"
+	]
+}
