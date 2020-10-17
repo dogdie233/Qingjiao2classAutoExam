@@ -1,0 +1,2 @@
+# Qingjiao2classAutoExam
+适用于青骄第二课堂的自动考试
