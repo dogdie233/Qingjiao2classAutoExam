@@ -10,7 +10,7 @@
 			"run_at": "document_end"
 		}
     ],
-    "homepage_url": "https://www.github.com",
+    "homepage_url": "https://github.com/dogdie233/Qingjiao2classAutoExam",
     "permissions":
 	[
 		"webRequest"
