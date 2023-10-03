@@ -1,18 +1,30 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "青骄第二课堂考试自动填写",
     "version": "1.0.0",
     "description": "适用于青骄第二课堂的自动考试谷歌浏览器插件",
     "content_scripts": [
         {
-			"matches": ["http://m.2-class.com/exams/*", "https://m.2-class.com/exams/*"],
-			"js": ["js/jquery-3.5.1.js", "js/main.js"],
+			"matches":
+            [
+                "http://www.2-class.com/courses/exams/*",
+                "https://www.2-class.com/courses/exams/*"
+            ],
+			"js":
+            [
+                "js/jquery-3.5.1.js",
+                "js/exam.js"
+            ],
 			"run_at": "document_end"
 		}
     ],
     "homepage_url": "https://github.com/dogdie233/Qingjiao2classAutoExam",
     "permissions":
 	[
-		"webRequest"
-	]
+        "webRequest"
+	],
+    "host_permissions":
+    [
+        "http://www.2-class.com/"
+    ]
 }
